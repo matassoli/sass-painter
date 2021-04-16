@@ -5,13 +5,14 @@
 }
 
 body {
-  position: relative;
+  font-family: "Mulish", sans-serif;
 }
 
 .header__top {
   height: 50px;
   background-color: white;
   width: 100%;
+  z-index: 2;
 }
 
 .header__bot {
@@ -20,32 +21,95 @@ body {
   opacity: 0.8;
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 
 .jumbotron {
   background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
-  min-height: 650px;
+  min-height: 700px;
   background-size: cover;
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.jumbotron__container {
+  width: 55%;
+  margin-bottom: 50px;
+  right: 35%;
+  top: 40%;
+  position: absolute;
+  color: #FFFFFF;
+}
+.jumbotron__container img {
+  height: 60px;
+  width: 60px;
+}
+.jumbotron__container p {
+  font-size: 20px;
+}
+
+.button {
+  padding: 15px 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  outline: none;
+}
+.button--blue {
+  background-color: #1473e6;
+  border: 2px solid #1473e6;
+}
+.button--blue:hover {
+  background: #0e63c9;
+  border: 2px solid #0e63c9;
+  transition: 0.2s;
+}
+.button--transp {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+}
+.button--transp:hover {
+  background: white;
+  color: black;
+  transition: 0.2s;
 }
 
 .title {
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 55%;
   margin-bottom: 50px;
 }
-.title h2 {
+
+h2,
+h3 {
   font-size: 36px;
   margin: 50px 0 5px;
 }
 
 .box {
+  font-size: 17px;
   width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
-  padding: 60px 0;
+  padding: 30px 0;
 }
-.box:nth-child(2n) {
+.box img {
+  transform: scaleX(-1);
+  margin: 0 60px 0 0;
+}
+.box:nth-child(2n+1) {
   flex-direction: row-reverse;
+}
+.box:nth-child(2n+1) img {
+  transform: scaleX(1);
+  margin: 0 0 0 60px;
 }

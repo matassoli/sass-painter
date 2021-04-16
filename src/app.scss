@@ -1,33 +1,42 @@
 @import "partials/common.scss";
 @import "partials/variables.scss";
 @import "partials/headers.scss";
+@import "partials/jumbo.scss";
+@import "partials/buttons.scss";
 
-.jumbotron {
-  background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
-  min-height: 650px;
-  background-size: cover;
-}
 
 .title {
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 55%;
   margin-bottom: 50px;
+}
 
-  h2 {
-    font-size: $bigText;
-    margin: 50px 0 5px;
-  }
+h2,
+h3 {
+  font-size: $bigText;
+  margin: 50px 0 5px;
 }
 
 .box {
+  font-size: 17px;
   width: $container;
   margin: auto;
   display: flex;
   align-items: center;
-  padding: 60px 0;
+  padding: 30px 0;
 
-  &:nth-child(2n) {
+  img {
+    transform: scaleX(-1);
+    margin: 0 60px 0 0;
+  }
+
+  &:nth-child(2n +1) {
     flex-direction: row-reverse;
+
+    img {
+      transform: scaleX(1);
+      margin: 0 0 0 60px;
+    }
   }
 }

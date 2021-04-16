@@ -1,0 +1,29 @@
+.jumbotron {
+  background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
+  min-height: 700px;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  font-size: $biggerText;
+  margin: 15px 0;
+}
+
+.jumbotron__container {
+  width: 55%;
+  margin-bottom: 50px;
+  right: 35%;
+  top: 40%;
+  position: absolute;
+  color: $colorW;
+
+  img {
+    height: 60px;
+    width: 60px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
