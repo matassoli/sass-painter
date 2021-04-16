@@ -5,5 +5,25 @@
 }
 
 body {
-  background-color: green;
+  position: relative;
+}
+
+.header__top {
+  height: 50px;
+  background-color: white;
+  width: 100%;
+}
+
+.header__bot {
+  height: 80px;
+  background-color: white;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+}
+
+main {
+  background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
+  min-height: 650px;
+  background-size: cover;
 }
