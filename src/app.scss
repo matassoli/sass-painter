@@ -1,22 +1,33 @@
 @import "partials/common.scss";
 @import "partials/variables.scss";
+@import "partials/headers.scss";
 
-.header__top {
-  height: 50px;
-  background-color: white;
-  width: 100%;
-}
-
-.header__bot {
-  height: 80px;
-  background-color: white;
-  opacity: 0.8;
-  position: absolute;
-  width: 100%;
-}
-
-main {
+.jumbotron {
   background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
   min-height: 650px;
   background-size: cover;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: $bigText;
+    margin: 50px 0 5px;
+  }
+}
+
+.box {
+  width: $container;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
 }
