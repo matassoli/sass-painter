@@ -1,17 +1,45 @@
 .header__top {
   height: 50px;
-  background-color: white;
+  background-color: #FFFFFF;
   width: 100%;
   z-index: 2;
 }
 
 .header__bot {
   height: 80px;
-  background-color: white;
+  background-color: #FFFFFF;
   opacity: 0.8;
   position: absolute;
   width: 100%;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__bot ul {
+  display: flex;
+}
+.header__bot ul a {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 0 20px;
+}
+.header__bot ul a:hover {
+  background-color: #e8e8e8;
+}
+.header__bot ul li {
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header__bot .adobe {
+  font-weight: 900;
+}
+.header__bot .adobe:hover {
+  background-color: inherit;
 }
 
 .jumbotron {
@@ -119,7 +147,7 @@ h1 {
 
 .contact--animate-enter-active,
 .contact--animate-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s;
 }
 
 .contact--animate-enter,

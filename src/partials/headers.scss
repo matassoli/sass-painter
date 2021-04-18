@@ -1,15 +1,49 @@
 .header__top {
   height: 50px;
-  background-color: white;
+  background-color: $colorW;
   width: 100%;
   z-index: 2;
 }
 
 .header__bot {
   height: 80px;
-  background-color: white;
+  background-color: $colorW;
   opacity: 0.8;
   position: absolute;
   width: 100%;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    a {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+      padding: 0 20px;
+    }
+
+    a:hover {
+      background-color: #e8e8e8;
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  .adobe {
+    font-weight: 900;
+  }
+
+  .adobe:hover {
+    background-color: inherit;
+  }
 }
