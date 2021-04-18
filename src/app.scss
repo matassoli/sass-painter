@@ -1,9 +1,18 @@
-@import "partials/common.scss";
 @import "partials/variables.scss";
 @import "partials/headers.scss";
 @import "partials/jumbo.scss";
 @import "partials/buttons.scss";
+@import "partials/footer.scss";
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
 
 .title {
   margin: 0 auto;

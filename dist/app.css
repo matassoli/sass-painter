@@ -1,13 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Mulish", sans-serif;
-}
-
 .header__top {
   height: 50px;
   background-color: white;
@@ -30,6 +20,13 @@ body {
   background-size: cover;
   position: relative;
 }
+.jumbotron i {
+  font-size: 40px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  color: #FFFFFF;
+}
 
 h1 {
   font-size: 40px;
@@ -40,13 +37,13 @@ h1 {
   width: 55%;
   margin-bottom: 50px;
   right: 35%;
-  top: 40%;
+  top: 35%;
   position: absolute;
   color: #FFFFFF;
 }
 .jumbotron__container img {
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
 }
 .jumbotron__container p {
   font-size: 20px;
@@ -79,6 +76,65 @@ h1 {
   background: white;
   color: black;
   transition: 0.2s;
+}
+
+.contact {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  font-size: 30px;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #000;
+}
+.contact i {
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact a {
+  color: #000;
+}
+
+.contact--open {
+  background-color: #FFFFFF;
+  height: 550px;
+  width: 380px;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  border-radius: 10px;
+  background: #513ab4;
+  background: linear-gradient(150deg, #513ab4 0%, #3d5fd0 45%, #1d9cfd 90%);
+}
+.contact--open i {
+  color: #FFFFFF;
+  position: absolute;
+  top: -30%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.contact--animate-enter-active,
+.contact--animate-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.contact--animate-enter,
+.contact--animate-leave-to {
+  opacity: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
 }
 
 .title {
